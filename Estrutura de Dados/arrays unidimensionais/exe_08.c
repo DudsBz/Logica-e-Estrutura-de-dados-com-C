@@ -15,19 +15,21 @@ int main(){
     int indice;
     for(indice = 0; indice<=TAM-1; indice++){
         printf("Digite a altura da pessoa[%i]", indice);
-        scanf("%i", &altura[indice]);
-    }
-    for(indice = 0; indice<=TAM-1; indice++){
+        scanf("%f", &altura[indice]);
         printf("Digite o peso da pessoa[%i]", indice);
-        scanf("%i", &altura[indice]);
+        scanf("%f", &altura[indice]);
+    }
+
+        
+    
+    for(indice = 0; indice<=TAM-1; indice++){
+        //imc = peso / (altura * altura)
+        imc[indice] = peso[indice] / (altura[indice] * altura[indice]);
     }
     for(indice = 0; indice<=TAM-1; indice++){
-        
+        printf("\nIndice %i:\tAltura: %.2f \t Peso: %.2f \t IMC: %.2f ", indice, altura[indice], peso[indice], imc[indice]);
     }
 
-
-
-
-
+    
     return(1);
 }
