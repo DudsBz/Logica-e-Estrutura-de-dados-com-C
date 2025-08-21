@@ -23,6 +23,7 @@ int main(){
         scanf("%i", &array1[i]);
     }
     for(i =0; i<MIN;i++){
+        // vai andar de par em par, pq o *2 pula as duas anteriores e o +1 pega o próximo
         array2[i] = array1[2*i] * array1[2*i+1];
     }
     for(i = 0; i<TAM; i++){
