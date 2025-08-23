@@ -1,3 +1,6 @@
+//Eduardo Leite Braz - 2° Semestre ADS
+//cv3095401
+
 /*
 Construa um programa em linguagem C que declare um array de inteiros com 50
 posições. A seguir o programa deverá solicitar ao usuário que forneça um número inteiro
